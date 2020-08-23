@@ -15,11 +15,10 @@ input = user_input
 random_number = random_number_generator
   if input.to_i != random_number
     puts "Sorry! The computer guessed #{random_number}."
-  else input.to_i == random_number
+  elsif input.to_i == random_number
     puts "You guessed the correct number!"
-  else input == "exit"
+  elsif input == "exit"
      puts "Goodbye!"
-   end
   end
 end
 
