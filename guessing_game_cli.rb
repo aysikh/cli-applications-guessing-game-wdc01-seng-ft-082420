@@ -6,7 +6,7 @@ def random_number_generator #this is an integer
   rand(6)+1
 end
 
-def user_input #this is a string 
+def user_input #this is a string
   gets.chomp()
 end
 
