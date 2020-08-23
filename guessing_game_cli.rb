@@ -7,11 +7,11 @@ def random_number_generator
 end
 
 def user_input
-  gets.chomp().to_s
+  gets.chomp()
 end
 
 def results
-input = user_input
+input = user_input.to_s
 random_number = random_number_generator
   if input != random_number
     puts "Sorry! The computer guessed #{random_number}."
