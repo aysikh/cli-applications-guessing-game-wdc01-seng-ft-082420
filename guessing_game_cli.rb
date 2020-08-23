@@ -19,6 +19,7 @@ random_number = random_number_generator
     puts "You guessed the correct number!"
   else input == "exit"
      puts "Goodbye!"
+   end
   end
 end
 
