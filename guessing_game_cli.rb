@@ -7,7 +7,7 @@ def random_number_generator
 end
 
 def user_input
-  gets.chomp()
+  gets.chomp().to_i
 end
 
 def results
