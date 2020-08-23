@@ -12,7 +12,7 @@ end
 
 def results
 input = user_input
-random_number.to_s = random_number_generator
+random_number = random_number_generator.to_s
   if input != random_number
     puts "Sorry! The computer guessed #{random_number}."
   elsif input == random_number
