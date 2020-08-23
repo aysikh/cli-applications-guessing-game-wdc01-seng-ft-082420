@@ -3,7 +3,7 @@ def user_prompt
 end
 
 def random_number_generator
-  rand(6)+1
+  rand(6)+1.to_s 
 end
 
 def user_input
@@ -11,7 +11,7 @@ def user_input
 end
 
 def results
-input = user_input.to_s
+input = user_input
 random_number = random_number_generator
   if input != random_number
     puts "Sorry! The computer guessed #{random_number}."
