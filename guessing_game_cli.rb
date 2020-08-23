@@ -3,21 +3,22 @@ def user_prompt
 end
 
 def random_number_generator
-  rand(6)+1
+  rand(6)+1.to_i
 end
 
 def user_input
-  gets.chomp().to_i
+  gets.chomp()
 end
 
 def results
 input = user_input
 random_number = random_number_generator
-  if input.to_i != random_number
+  if input != random_number
     puts "Sorry! The computer guessed #{random_number}."
-  elsif input.to_i == random_number
+  elsif input == random_number
     puts "You guessed the correct number!"
-  elsif input == "exit"
+  end
+  if input == "exit"
      puts "Goodbye!"
   end
 end
